@@ -96,8 +96,8 @@ namespace BookingSystem
             SmtpClient clnt = new SmtpClient("smtp.gmail.com", 587);
             clnt.Credentials = new System.Net.NetworkCredential()
             {
-                UserName = "fundum31@gmail.com",
-                Password = "dummy@20@itsfun"
+                UserName = "<Enter your MailId>",
+                Password = "<Enter password>"
             };
             clnt.EnableSsl = true;
             clnt.Send(msg);
