@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.Master.cs" Inherits="BookingSystem.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="margin-left: 9px">
+            <br />
+            <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" Text="Admin Page"></asp:Label>
+            <br />
+            <br />
+            <asp:Button runat="server" Text="Add Items" OnClick="BtnAdd" Width="246px" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button runat="server" Text="View Bookings" style="margin-left: 13px" Width="235px" OnClick="Btnbook" />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button1" runat="server" style="margin-left: 17px" Text="Edit Items" Width="225px" OnClick="BtnEdit" />
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
